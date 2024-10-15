@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ThePositiveOne</title>
+    <!-- Tailwind CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Customization Script -->
     <script>
       tailwind.config = {
         theme: {
@@ -19,76 +26,142 @@
       };
     </script>
   </head>
+
   <body class="bg-dark-gray text-white">
-    <header class="bg-dark-gray p-4">
-      <nav class="flex justify-between items-center">
-        <div class="text-light-yellow font-bold">ThePositiveOne</div>
-        <ul class="flex space-x-4">
-          <li><a href="#" class="hover:text-light-yellow">Home</a></li>
-          <li><a href="#" class="hover:text-light-yellow">Blogs</a></li>
-          <li><a href="#" class="hover:text-light-yellow">Originals</a></li>
-          <li><a href="#" class="hover:text-light-yellow">About Us</a></li>
-          <li><a href="#" class="hover:text-light-yellow">▼</a></li>
-        </ul>
-      </nav>
+    <!-- Nav Bar -->
+    <header>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li><a>Home</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Originals</a></li>
+              <li><a>About Us</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl"
+            ><span
+              >The<span class="text-light-yellow">Positive</span>One</span
+            ></a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Originals</a></li>
+            <li><a>About Us</a></li>
+            <li class="justify-center">
+              <details>
+                <summary></summary>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn">Button</a>
+        </div>
+      </div>
     </header>
 
+    <!-- Main -->
     <main>
-      <section class="text-center py-16">
-        <h1 class="text-6xl font-bold mb-4">
-          The <span class="text-light-yellow">Positive</span> One
-        </h1>
-        <p class="text-xl">
-          <span class="mr-2">To</span>
-          <span class="mr-2">Live</span>
-          <span class="mr-2">a bit</span>
-          <span class="mr-2">More</span>
-          <span class="text-light-yellow mr-2">Optimistic</span>
-          <span>Everyday</span>
-        </p>
-      </section>
+      <!-- Hero Upper Section -->
+      <section>
+        <div class="text-center py-16">
+          <h1 class="text-6xl font-bold mb-4">
+            The <span class="text-light-yellow">Positive</span> One
+          </h1>
+          <p class="text-xl">
+            <span class="mr-2">To</span>
+            <span class="mr-2">Live</span>
+            <span class="mr-2">a bit</span>
+            <span class="mr-2">More</span>
+            <span class="text-light-yellow mr-2">Optimistic</span>
+            <span>Everyday</span>
+          </p>
+        </div>
 
-      <section class="flex justify-center space-x-4 mb-8">
-        <!-- Replace with actual icons or images -->
-        <div class="w-16 h-16 bg-gray-300 rounded-full"></div>
-        <div class="w-16 h-16 bg-gray-300 rounded-full"></div>
-        <div class="w-16 h-16 bg-gray-300 rounded-full"></div>
-        <div class="w-16 h-16 bg-gray-300 rounded-full"></div>
-        <div class="w-16 h-16 bg-gray-300 rounded-full"></div>
-        <div class="w-16 h-16 bg-gray-300 rounded-full"></div>
-      </section>
+        <div class="flex justify-center space-x-4 mb-8">
+          <!-- Replace with actual icons or images -->
+          <div class="w-16 h-16 bg-gray-300 rounded-full"></div>
+          <div class="w-16 h-16 bg-gray-300 rounded-full"></div>
+          <div class="w-16 h-16 bg-gray-300 rounded-full"></div>
+          <div class="w-16 h-16 bg-gray-300 rounded-full"></div>
+          <div class="w-16 h-16 bg-gray-300 rounded-full"></div>
+          <div class="w-16 h-16 bg-gray-300 rounded-full"></div>
+        </div>
 
-      <section class="text-center mb-8">
-        <p class="text-light-yellow">Welcome @ThePositiveOne!</p>
-        <div class="flex justify-center space-x-2 mt-2">
-          <!-- Replace with actual social media icons -->
-          <span class="w-6 h-6 bg-gray-300 rounded-full"></span>
-          <span class="w-6 h-6 bg-gray-300 rounded-full"></span>
-          <span class="w-6 h-6 bg-gray-300 rounded-full"></span>
-          <span class="w-6 h-6 bg-gray-300 rounded-full"></span>
+        <div class="text-center mb-8">
+          <p class="text-light-yellow">Welcome @ThePositiveOne!</p>
+          <div class="flex justify-center space-x-2 mt-2">
+            <!-- Replace with actual social media icons -->
+            <span class="w-6 h-6 bg-gray-300 rounded-full"></span>
+            <span class="w-6 h-6 bg-gray-300 rounded-full"></span>
+            <span class="w-6 h-6 bg-gray-300 rounded-full"></span>
+            <span class="w-6 h-6 bg-gray-300 rounded-full"></span>
+          </div>
         </div>
       </section>
 
-      <section class="max-w-4xl mx-auto px-4 mb-16">
-        <h2 class="text-3xl font-bold text-light-yellow mb-4">About Us</h2>
-        <p class="mb-4">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim
-        </p>
-        <p class="mb-4">
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-          ea commodo consequat. Duis aute irure dolor in reprehenderit
-        </p>
-        <p class="mb-4">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim
-        </p>
-        <p>
-          veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-          ea commodo consequat. Duis aute irure dolor in reprehenderit
-        </p>
+      <!-- Hero Lower Section -->
+      <section class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1">
+        <!-- Left Side Text Container -->
+        <div class="max-w-4xl mx-auto px-10 mb-16">
+          <h2 class="text-3xl font-bold text-light-yellow mb-4">About Us</h2>
+          <p class="mb-4">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim
+          </p>
+          <p class="mb-4">
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit
+          </p>
+          <p class="mb-4">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim
+          </p>
+          <p>
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit
+          </p>
+        </div>
+
+        <!-- Right Side Image Container -->
+        <div class="flex justify-center items-center">
+          <img
+            src="./images/TPO (SVG).svg"
+            alt="Logo of The Positive One"
+            height="300"
+            width="300"
+          />
+        </div>
       </section>
 
       <section class="bg-highlight-red py-16 px-4">
