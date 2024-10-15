@@ -116,20 +116,77 @@
           </p>
         </div>
 
-        <div class="flex justify-center space-x-4 mb-8">
-          <!-- Replace with actual icons or images -->
-          <div class="w-16 h-16 bg-gray-300 rounded-full"></div>
-          <div class="w-16 h-16 bg-gray-300 rounded-full"></div>
-          <div class="w-16 h-16 bg-gray-300 rounded-full"></div>
-          <div class="w-16 h-16 bg-gray-300 rounded-full"></div>
-          <div class="w-16 h-16 bg-gray-300 rounded-full"></div>
-          <div class="w-16 h-16 bg-gray-300 rounded-full"></div>
+        <!-- Images Section -->
+        <div class="flex justify-center items-center overflow-x-auto">
+          <!-- Image 1 -->
+          <div class="">
+            <img
+              src="./images/img1.png"
+              alt="Image 1"
+              class="w-32 h-32 rounded-2xl shadow-lg"
+            />
+          </div>
+
+          <!-- Image 2 -->
+          <div class="">
+            <img
+              src="./images/img2.png"
+              alt="Image 2"
+              class="w-64 h-48 rounded-2xl shadow-lg"
+            />
+          </div>
+
+          <!-- Image 3 -->
+          <div class="">
+            <img
+              src="./images/img3.png"
+              alt="Image 3"
+              class="w-64 h-48 rounded-2xl shadow-lg"
+            />
+          </div>
+
+          <!-- Image 4 -->
+          <div class="">
+            <img
+              src="./images/img4.png"
+              alt="Image 4"
+              class="w-64 h-48 rounded-2xl shadow-lg"
+            />
+          </div>
+
+          <!-- Image 5 -->
+          <div class="">
+            <img
+              src="./images/img5.png"
+              alt="Image 5"
+              class="w-64 h-48 rounded-2xl shadow-lg"
+            />
+          </div>
+
+          <!-- Image 6 -->
+          <div class="">
+            <img
+              src="./images/img6.png"
+              alt="Image 6"
+              class="w-32 h-32 rounded-2xl shadow-lg"
+            />
+          </div>
+
+          <!-- Image 7 -->
+          <div class="">
+            <img
+              src="./images/img7.png"
+              alt="Image 7"
+              class="w-32 h-32 rounded-2xl shadow-lg"
+            />
+          </div>
         </div>
 
-        <div class="text-center mb-8">
-          <p class="text-light-yellow">Welcome @ThePositiveOne!</p>
-          <div class="flex justify-center -space-x-1 mt-2">
-            <!-- Replace with actual social media icons -->
+        <!-- Social Icons Section -->
+        <div class="text-center mt-8 mb-8">
+          <p>Welcome @The<span class="text-light-yellow">Positive</span>One!</p>
+          <div class="flex justify-center -space-x-1 mt-3">
+            <!--social media icons -->
             <div
               class="rounded-full bg-light-yellow w-8 p-1 shadow-lg shadow-black z-50"
             >
@@ -163,9 +220,11 @@
       </section>
 
       <!-- Hero Lower Section -->
-      <section class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1">
+      <section class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 mt-24">
         <!-- Left Side Text Container -->
         <div class="max-w-4xl mx-auto px-10 mb-16">
+          <!-- Horizontal Line above the text -->
+          <div class="w-12 h-1 bg-light-yellow mb-2"></div>
           <h2 class="text-3xl font-bold text-light-yellow mb-4">About Us</h2>
           <p class="mb-4">
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -251,38 +310,83 @@
       </section>
     </main>
 
-    <footer class="bg-light-yellow text-dark-gray py-8 px-4">
-      <div class="max-w-4xl mx-auto">
-        <div class="flex justify-between mb-4">
-          <span class="font-bold">ThePositiveOne</span>
-          <div class="flex space-x-2">
-            <!-- Replace with actual social media icons -->
-            <span class="w-6 h-6 bg-gray-300 rounded-full"></span>
-            <span class="w-6 h-6 bg-gray-300 rounded-full"></span>
-            <span class="w-6 h-6 bg-gray-300 rounded-full"></span>
-            <span class="w-6 h-6 bg-gray-300 rounded-full"></span>
+    <!-- Footer for large and medium devices -->
+    <footer
+      class="bg-light-yellow text-dark-gray py-8 px-4 hidden md:block lg:block"
+    >
+      <div class="w-11/12 mx-auto flex justify-between">
+        <!-- Footer Left -->
+        <div>
+          <div class="mb-6">
+            <h2 class="text-xl font-semibold">ThePositiveOne</h2>
+          </div>
+
+          <div class="flex gap-20">
+            <div class="flex flex-col space-y-2">
+              <a class="link link-hover">Home</a>
+              <a class="link link-hover">About Us</a>
+            </div>
+
+            <div class="flex flex-col space-y-2">
+              <a class="link link-hover">Blogs</a>
+              <a class="link link-hover">Cat 1</a>
+              <a class="link link-hover">Cat 2</a>
+              <a class="link link-hover">Cat 3</a>
+            </div>
+
+            <div class="flex flex-col space-y-2">
+              <a class="link link-hover">Originals</a>
+              <a class="link link-hover">Specials</a>
+            </div>
+          </div>
+
+          <!-- Horizontal Line above the text -->
+          <hr class="w-full border-t-2 border-black bg-black mt-6 mb-2" />
+
+          <div>
+            <p>&copy; 2024 TPO. All Rights Reserved.</p>
           </div>
         </div>
-        <div class="flex justify-between">
-          <ul class="space-y-2">
-            <li><a href="#" class="hover:underline">Home</a></li>
-            <li><a href="#" class="hover:underline">About Us</a></li>
-          </ul>
-          <ul class="space-y-2">
-            <li><a href="#" class="hover:underline">Blogs</a></li>
-            <li><a href="#" class="hover:underline">Cat 1</a></li>
-            <li><a href="#" class="hover:underline">Cat 2</a></li>
-            <li><a href="#" class="hover:underline">Cat 3</a></li>
-          </ul>
-          <ul class="space-y-2">
-            <li><a href="#" class="hover:underline">Originals</a></li>
-            <li><a href="#" class="hover:underline">Specials</a></li>
-          </ul>
+
+        <!-- Footer Right -->
+        <div class="space-y-12">
+          <!--social media icons -->
+          <div class="flex justify-end -space-x-1 mt-3 text-center">
+            <div
+              class="rounded-full bg-light-yellow w-8 p-1 shadow-lg shadow-black z-50"
+            >
+              <a>
+                <i class="fa-brands fa-facebook-f text-black"></i>
+              </a>
+            </div>
+            <div
+              class="rounded-full bg-light-yellow w-8 p-1 shadow-lg shadow-black z-40"
+            >
+              <a>
+                <i class="fa-brands fa-linkedin-in text-black"></i>
+              </a>
+            </div>
+            <div
+              class="rounded-full bg-light-yellow w-8 p-1 shadow-lg shadow-black z-50"
+            >
+              <a>
+                <i class="fa-brands fa-instagram text-black"></i>
+              </a>
+            </div>
+            <div
+              class="rounded-full bg-light-yellow w-8 p-1 shadow-lg shadow-black z-40"
+            >
+              <a>
+                <i class="fa-brands fa-twitter text-black"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Search Bar -->
           <div>
             <input
               type="text"
-              placeholder="Search"
-              class="bg-white text-dark-gray px-2 py-1 rounded"
+              class="bg-transparent text-dark-gray h-7 w-9/12 px-2 py-1 rounded-2xl border border-black"
             />
             <button
               class="bg-dark-gray text-light-yellow px-2 py-1 rounded ml-2"
@@ -290,14 +394,104 @@
               🔍
             </button>
           </div>
-        </div>
-        <div class="mt-8 text-sm">
-          <p>© 2023 TPO. All Rights Reserved.</p>
-          <div class="flex justify-between mt-2">
-            <a href="#" class="hover:underline">Terms & Conditions</a>
-            <a href="#" class="hover:underline">Privacy Policy</a>
-            <a href="#" class="hover:underline">Accessibility Statement</a>
+
+          <div class="flex gap-8">
+            <a class="link link-hover">Terms &<br />Condition</a>
+            <a class="link link-hover">Privacy<br />Policy</a>
+            <a class="link link-hover">Accessibility<br />Statement</a>
           </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer for Mobile -->
+    <footer class="bg-light-yellow text-dark-gray py-8 px-4 block md:hidden">
+      <div class="w-11/12 mx-auto">
+        <div class="mb-6 flex justify-between items-center">
+          <div>
+            <h2 class="text-xl font-semibold">ThePositiveOne</h2>
+          </div>
+
+          <div>
+            <!--social media icons -->
+            <div class="flex justify-start -space-x-1 mt-3 text-center">
+              <div
+                class="rounded-full bg-light-yellow w-8 p-1 shadow-sm shadow-black z-50"
+              >
+                <a>
+                  <i class="fa-brands fa-facebook-f text-black"></i>
+                </a>
+              </div>
+              <div
+                class="rounded-full bg-light-yellow w-8 p-1 shadow-sm shadow-black z-40"
+              >
+                <a>
+                  <i class="fa-brands fa-linkedin-in text-black"></i>
+                </a>
+              </div>
+              <div
+                class="rounded-full bg-light-yellow w-8 p-1 shadow-sm shadow-black z-50"
+              >
+                <a>
+                  <i class="fa-brands fa-instagram text-black"></i>
+                </a>
+              </div>
+              <div
+                class="rounded-full bg-light-yellow w-8 p-1 shadow-sm shadow-black z-40"
+              >
+                <a>
+                  <i class="fa-brands fa-twitter text-black"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center gap-20">
+          <div class="flex flex-col space-y-2">
+            <a class="link link-hover">Home</a>
+            <a class="link link-hover">About Us</a>
+          </div>
+
+          <div class="flex flex-col space-y-2">
+            <a class="link link-hover">Blogs</a>
+            <a class="link link-hover">Cat 1</a>
+            <a class="link link-hover">Cat 2</a>
+            <a class="link link-hover">Cat 3</a>
+          </div>
+
+          <div class="flex flex-col space-y-2">
+            <a class="link link-hover">Originals</a>
+            <a class="link link-hover">Specials</a>
+          </div>
+        </div>
+
+        <div class="mt-8">
+          <!-- Search Bar -->
+          <div class="flex justify-center">
+            <input
+              type="text"
+              class="bg-transparent text-dark-gray h-7 w-9/12 px-2 py-1 rounded-2xl border border-black"
+            />
+            <button
+              class="bg-dark-gray text-light-yellow px-2 py-1 rounded ml-2"
+            >
+              🔍
+            </button>
+          </div>
+
+          <div class="flex justify-center gap-8 mt-8 text-center">
+            <a class="link link-hover">Terms &<br />Condition</a>
+            <a class="link link-hover">Privacy<br />Policy</a>
+            <a class="link link-hover">Accessibility<br />Statement</a>
+          </div>
+        </div>
+
+        <!-- Horizontal Line above the text -->
+        <hr class="w-full border-t-2 border-black bg-black mt-6 mb-2" />
+
+        <div class="text-center mt-4">
+          <p>&copy; 2024 TPO. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
