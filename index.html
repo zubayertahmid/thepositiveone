@@ -1,166 +1,501 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ThePositiveOne</title>
+    <!-- Font awesome cds -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Tailwind CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Customization Script -->
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'dark-gray': '#1e2124',
-                        'light-yellow': '#f9f871',
-                        'highlight-red': '#e63946',
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "dark-gray": "#1e2124",
+              "light-yellow": "#f9f871",
+              "highlight-red": "#e63946",
+            },
+          },
+        },
+      };
     </script>
-</head>
-<body class="bg-dark-gray text-white">
-    <header class="bg-dark-gray p-4">
-        <nav class="flex justify-between items-center">
-            <div class="text-light-yellow font-bold">ThePositiveOne</div>
-            <ul class="flex space-x-4">
-                <li><a href="#" class="hover:text-light-yellow">Home</a></li>
-                <li><a href="#" class="hover:text-light-yellow">Blogs</a></li>
-                <li><a href="#" class="hover:text-light-yellow">Originals</a></li>
-                <li><a href="#" class="hover:text-light-yellow">About Us</a></li>
-                <li><a href="#" class="hover:text-light-yellow">▼</a></li>
+  </head>
+
+  <body class="bg-dark-gray text-white">
+    <!-- Nav Bar -->
+    <header>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li><a>Home</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Originals</a></li>
+              <li><a>About Us</a></li>
             </ul>
-        </nav>
+          </div>
+          <a class="btn btn-ghost text-xl"
+            ><span
+              >The<span class="text-light-yellow">Positive</span>One</span
+            ></a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Originals</a></li>
+            <li><a>About Us</a></li>
+            <li class="justify-center">
+              <details>
+                <summary></summary>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn">Button</a>
+        </div>
+      </div>
     </header>
 
+    <!-- Main -->
     <main>
-        <section class="text-center py-16">
-            <h1 class="text-6xl font-bold mb-4">The <span class="text-light-yellow">Positive</span> One</h1>
-            <p class="text-xl">
-                <span class="mr-2">To</span>
-                <span class="mr-2">Live</span>
-                <span class="mr-2">a bit</span>
-                <span class="mr-2">More</span>
-                <span class="text-light-yellow mr-2">Optimistic</span>
-                <span>Everyday</span>
-            </p>
-        </section>
+      <!-- Hero Upper Section -->
+      <section>
+        <div class="text-center py-16">
+          <h1 class="text-6xl font-bold mb-4">
+            The <span class="text-light-yellow">Positive</span> One
+          </h1>
+          <p class="text-xl">
+            <span class="mr-2">To</span>
+            <span class="mr-2">Live</span>
+            <span class="mr-2">a bit</span>
+            <span class="mr-2">More</span>
+            <span class="text-light-yellow mr-2">Optimistic</span>
+            <span>Everyday</span>
+          </p>
+        </div>
 
-        <section class="flex justify-center space-x-4 mb-8">
-            <!-- Replace with actual icons or images -->
-            <div class="w-16 h-16 bg-gray-300 rounded-full"></div>
-            <div class="w-16 h-16 bg-gray-300 rounded-full"></div>
-            <div class="w-16 h-16 bg-gray-300 rounded-full"></div>
-            <div class="w-16 h-16 bg-gray-300 rounded-full"></div>
-            <div class="w-16 h-16 bg-gray-300 rounded-full"></div>
-            <div class="w-16 h-16 bg-gray-300 rounded-full"></div>
-        </section>
+        <!-- Images Section -->
+        <div class="flex justify-center items-center overflow-x-auto">
+          <!-- Image 1 -->
+          <div class="">
+            <img
+              src="./images/img1.png"
+              alt="Image 1"
+              class="w-32 h-32 rounded-2xl shadow-lg"
+            />
+          </div>
 
-        <section class="text-center mb-8">
-            <p class="text-light-yellow">Welcome @ThePositiveOne!</p>
-            <div class="flex justify-center space-x-2 mt-2">
-                <!-- Replace with actual social media icons -->
-                <span class="w-6 h-6 bg-gray-300 rounded-full"></span>
-                <span class="w-6 h-6 bg-gray-300 rounded-full"></span>
-                <span class="w-6 h-6 bg-gray-300 rounded-full"></span>
-                <span class="w-6 h-6 bg-gray-300 rounded-full"></span>
+          <!-- Image 2 -->
+          <div class="">
+            <img
+              src="./images/img2.png"
+              alt="Image 2"
+              class="w-64 h-48 rounded-2xl shadow-lg"
+            />
+          </div>
+
+          <!-- Image 3 -->
+          <div class="">
+            <img
+              src="./images/img3.png"
+              alt="Image 3"
+              class="w-64 h-48 rounded-2xl shadow-lg"
+            />
+          </div>
+
+          <!-- Image 4 -->
+          <div class="">
+            <img
+              src="./images/img4.png"
+              alt="Image 4"
+              class="w-64 h-48 rounded-2xl shadow-lg"
+            />
+          </div>
+
+          <!-- Image 5 -->
+          <div class="">
+            <img
+              src="./images/img5.png"
+              alt="Image 5"
+              class="w-64 h-48 rounded-2xl shadow-lg"
+            />
+          </div>
+
+          <!-- Image 6 -->
+          <div class="">
+            <img
+              src="./images/img6.png"
+              alt="Image 6"
+              class="w-32 h-32 rounded-2xl shadow-lg"
+            />
+          </div>
+
+          <!-- Image 7 -->
+          <div class="">
+            <img
+              src="./images/img7.png"
+              alt="Image 7"
+              class="w-32 h-32 rounded-2xl shadow-lg"
+            />
+          </div>
+        </div>
+
+        <!-- Social Icons Section -->
+        <div class="text-center mt-8 mb-8">
+          <p>Welcome @The<span class="text-light-yellow">Positive</span>One!</p>
+          <div class="flex justify-center -space-x-1 mt-3">
+            <!--social media icons -->
+            <div
+              class="rounded-full bg-light-yellow w-8 p-1 shadow-lg shadow-black z-50"
+            >
+              <a>
+                <i class="fa-brands fa-facebook-f text-black"></i>
+              </a>
             </div>
-        </section>
-
-        <section class="max-w-4xl mx-auto px-4 mb-16">
-            <h2 class="text-3xl font-bold text-light-yellow mb-4">About Us</h2>
-            <p class="mb-4">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore 
-                magna aliqua. Ut enim ad minim
-            </p>
-            <p class="mb-4">
-                veniam, quis nostrud exercitation ullamco laboris nisi ut 
-                aliquip ex ea commodo consequat. Duis aute irure 
-                dolor in reprehenderit
-            </p>
-            <p class="mb-4">
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore 
-                magna aliqua. Ut enim ad minim
-            </p>
-            <p>
-                veniam, quis nostrud exercitation ullamco laboris nisi ut 
-                aliquip ex ea commodo consequat. Duis aute irure 
-                dolor in reprehenderit
-            </p>
-        </section>
-
-        <section class="bg-highlight-red py-16 px-4">
-            <h2 class="text-3xl font-bold mb-8 text-center">Highlights</h2>
-            <div class="grid grid-cols-3 gap-4 max-w-4xl mx-auto">
-                <div class="bg-dark-gray aspect-square flex items-center justify-center text-4xl font-bold">1:1</div>
-                <div class="bg-dark-gray aspect-video flex items-center justify-center text-4xl font-bold">16:9</div>
-                <div class="bg-dark-gray aspect-square flex items-center justify-center text-4xl font-bold">1:1</div>
-                <div class="bg-dark-gray col-span-2 aspect-video flex items-center justify-center text-4xl font-bold">16:9</div>
-                <div class="bg-dark-gray aspect-square flex items-center justify-center text-4xl font-bold">2:3</div>
+            <div
+              class="rounded-full bg-light-yellow w-8 p-1 shadow-lg shadow-black z-40"
+            >
+              <a>
+                <i class="fa-brands fa-linkedin-in text-black"></i>
+              </a>
             </div>
-        </section>
-
-        <section class="py-16 px-4">
-            <h2 class="text-3xl font-bold text-light-yellow mb-8 text-center">Originals</h2>
-            <div class="max-w-4xl mx-auto bg-gray-800 rounded-lg p-8">
-                <h3 class="text-2xl mb-4">The <span class="text-light-yellow">Oxyjet</span></h3>
-                <p class="mb-4">Flow Generator</p>
-                <!-- Replace with actual image -->
-                <div class="bg-gray-300 h-64 w-full rounded-lg mb-4"></div>
-                <div class="flex justify-center space-x-2">
-                    <span class="w-2 h-2 bg-gray-300 rounded-full"></span>
-                    <span class="w-2 h-2 bg-gray-300 rounded-full"></span>
-                    <span class="w-2 h-2 bg-gray-300 rounded-full"></span>
-                    <span class="w-2 h-2 bg-gray-300 rounded-full"></span>
-                    <span class="w-2 h-2 bg-gray-300 rounded-full"></span>
-                </div>
+            <div
+              class="rounded-full bg-light-yellow w-8 p-1 shadow-lg shadow-black z-50"
+            >
+              <a>
+                <i class="fa-brands fa-instagram text-black"></i>
+              </a>
             </div>
-        </section>
+            <div
+              class="rounded-full bg-light-yellow w-8 p-1 shadow-lg shadow-black z-40"
+            >
+              <a>
+                <i class="fa-brands fa-twitter text-black"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hero Lower Section -->
+      <section class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 mt-24">
+        <!-- Left Side Text Container -->
+        <div class="max-w-4xl mx-auto px-10 mb-16">
+          <!-- Horizontal Line above the text -->
+          <div class="w-12 h-1 bg-light-yellow mb-2"></div>
+          <h2 class="text-3xl font-bold text-light-yellow mb-4">About Us</h2>
+          <p class="mb-4">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim
+          </p>
+          <p class="mb-4">
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit
+          </p>
+          <p class="mb-4">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim
+          </p>
+          <p>
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit
+          </p>
+        </div>
+
+        <!-- Right Side Image Container -->
+        <div class="flex justify-center items-center">
+          <img
+            src="./images/TPO (SVG).svg"
+            alt="Logo of The Positive One"
+            height="300"
+            width="300"
+          />
+        </div>
+      </section>
+
+      <section class="bg-highlight-red py-16 px-4">
+        <h2 class="text-3xl font-bold mb-8 text-center">Highlights</h2>
+        <div class="grid grid-cols-3 gap-4 max-w-4xl mx-auto">
+          <div
+            class="bg-dark-gray aspect-square flex items-center justify-center text-4xl font-bold"
+          >
+            1:1
+          </div>
+          <div
+            class="bg-dark-gray aspect-video flex items-center justify-center text-4xl font-bold"
+          >
+            16:9
+          </div>
+          <div
+            class="bg-dark-gray aspect-square flex items-center justify-center text-4xl font-bold"
+          >
+            1:1
+          </div>
+          <div
+            class="bg-dark-gray col-span-2 aspect-video flex items-center justify-center text-4xl font-bold"
+          >
+            16:9
+          </div>
+          <div
+            class="bg-dark-gray aspect-square flex items-center justify-center text-4xl font-bold"
+          >
+            2:3
+          </div>
+        </div>
+      </section>
+
+      <section class="py-16 px-4">
+        <h2 class="text-3xl font-bold text-light-yellow mb-8 text-center">
+          Originals
+        </h2>
+        <div class="max-w-4xl mx-auto bg-gray-800 rounded-lg p-8">
+          <h3 class="text-2xl mb-4">
+            The <span class="text-light-yellow">Oxyjet</span>
+          </h3>
+          <p class="mb-4">Flow Generator</p>
+          <!-- Replace with actual image -->
+          <div class="bg-gray-300 h-64 w-full rounded-lg mb-4"></div>
+          <div class="flex justify-center space-x-2">
+            <span class="w-2 h-2 bg-gray-300 rounded-full"></span>
+            <span class="w-2 h-2 bg-gray-300 rounded-full"></span>
+            <span class="w-2 h-2 bg-gray-300 rounded-full"></span>
+            <span class="w-2 h-2 bg-gray-300 rounded-full"></span>
+            <span class="w-2 h-2 bg-gray-300 rounded-full"></span>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer class="bg-light-yellow text-dark-gray py-8 px-4">
-        <div class="max-w-4xl mx-auto">
-            <div class="flex justify-between mb-4">
-                <span class="font-bold">ThePositiveOne</span>
-                <div class="flex space-x-2">
-                    <!-- Replace with actual social media icons -->
-                    <span class="w-6 h-6 bg-gray-300 rounded-full"></span>
-                    <span class="w-6 h-6 bg-gray-300 rounded-full"></span>
-                    <span class="w-6 h-6 bg-gray-300 rounded-full"></span>
-                    <span class="w-6 h-6 bg-gray-300 rounded-full"></span>
-                </div>
+    <!-- Footer for large and medium devices -->
+    <footer
+      class="bg-light-yellow text-dark-gray py-8 px-4 hidden md:block lg:block"
+    >
+      <div class="w-11/12 mx-auto flex justify-between">
+        <!-- Footer Left -->
+        <div>
+          <div class="mb-6">
+            <h2 class="text-xl font-semibold">ThePositiveOne</h2>
+          </div>
+
+          <div class="flex gap-20">
+            <div class="flex flex-col space-y-2">
+              <a class="link link-hover">Home</a>
+              <a class="link link-hover">About Us</a>
             </div>
-            <div class="flex justify-between">
-                <ul class="space-y-2">
-                    <li><a href="#" class="hover:underline">Home</a></li>
-                    <li><a href="#" class="hover:underline">About Us</a></li>
-                </ul>
-                <ul class="space-y-2">
-                    <li><a href="#" class="hover:underline">Blogs</a></li>
-                    <li><a href="#" class="hover:underline">Cat 1</a></li>
-                    <li><a href="#" class="hover:underline">Cat 2</a></li>
-                    <li><a href="#" class="hover:underline">Cat 3</a></li>
-                </ul>
-                <ul class="space-y-2">
-                    <li><a href="#" class="hover:underline">Originals</a></li>
-                    <li><a href="#" class="hover:underline">Specials</a></li>
-                </ul>
-                <div>
-                    <input type="text" placeholder="Search" class="bg-white text-dark-gray px-2 py-1 rounded">
-                    <button class="bg-dark-gray text-light-yellow px-2 py-1 rounded ml-2">🔍</button>
-                </div>
+
+            <div class="flex flex-col space-y-2">
+              <a class="link link-hover">Blogs</a>
+              <a class="link link-hover">Cat 1</a>
+              <a class="link link-hover">Cat 2</a>
+              <a class="link link-hover">Cat 3</a>
             </div>
-            <div class="mt-8 text-sm">
-                <p>© 2023 TPO. All Rights Reserved.</p>
-                <div class="flex justify-between mt-2">
-                    <a href="#" class="hover:underline">Terms & Conditions</a>
-                    <a href="#" class="hover:underline">Privacy Policy</a>
-                    <a href="#" class="hover:underline">Accessibility Statement</a>
-                </div>
+
+            <div class="flex flex-col space-y-2">
+              <a class="link link-hover">Originals</a>
+              <a class="link link-hover">Specials</a>
             </div>
+          </div>
+
+          <!-- Horizontal Line above the text -->
+          <hr class="w-full border-t-2 border-black bg-black mt-6 mb-2" />
+
+          <div>
+            <p>&copy; 2024 TPO. All Rights Reserved.</p>
+          </div>
         </div>
+
+        <!-- Footer Right -->
+        <div class="space-y-12">
+          <!--social media icons -->
+          <div class="flex justify-end -space-x-1 mt-3 text-center">
+            <div
+              class="rounded-full bg-light-yellow w-8 p-1 shadow-lg shadow-black z-50"
+            >
+              <a>
+                <i class="fa-brands fa-facebook-f text-black"></i>
+              </a>
+            </div>
+            <div
+              class="rounded-full bg-light-yellow w-8 p-1 shadow-lg shadow-black z-40"
+            >
+              <a>
+                <i class="fa-brands fa-linkedin-in text-black"></i>
+              </a>
+            </div>
+            <div
+              class="rounded-full bg-light-yellow w-8 p-1 shadow-lg shadow-black z-50"
+            >
+              <a>
+                <i class="fa-brands fa-instagram text-black"></i>
+              </a>
+            </div>
+            <div
+              class="rounded-full bg-light-yellow w-8 p-1 shadow-lg shadow-black z-40"
+            >
+              <a>
+                <i class="fa-brands fa-twitter text-black"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Search Bar -->
+          <div>
+            <input
+              type="text"
+              class="bg-transparent text-dark-gray h-7 w-9/12 px-2 py-1 rounded-2xl border border-black"
+            />
+            <button
+              class="bg-dark-gray text-light-yellow px-2 py-1 rounded ml-2"
+            >
+              🔍
+            </button>
+          </div>
+
+          <div class="flex gap-8">
+            <a class="link link-hover">Terms &<br />Condition</a>
+            <a class="link link-hover">Privacy<br />Policy</a>
+            <a class="link link-hover">Accessibility<br />Statement</a>
+          </div>
+        </div>
+      </div>
     </footer>
-</body>
+
+    <!-- Footer for Mobile -->
+    <footer class="bg-light-yellow text-dark-gray py-8 px-4 block md:hidden">
+      <div class="w-11/12 mx-auto">
+        <div class="mb-6 flex justify-between items-center">
+          <div>
+            <h2 class="text-xl font-semibold">ThePositiveOne</h2>
+          </div>
+
+          <div>
+            <!--social media icons -->
+            <div
+              class="flex justify-start items-center -space-x-1 mt-3 text-center"
+            >
+              <div
+                class="rounded-full bg-light-yellow w-8 p-1 shadow-sm shadow-black z-50"
+              >
+                <a>
+                  <i class="fa-brands fa-facebook-f text-black"></i>
+                </a>
+              </div>
+              <div
+                class="rounded-full bg-light-yellow w-8 p-1 shadow-sm shadow-black z-40"
+              >
+                <a>
+                  <i class="fa-brands fa-linkedin-in text-black"></i>
+                </a>
+              </div>
+              <div
+                class="rounded-full bg-light-yellow w-8 p-1 shadow-sm shadow-black z-50"
+              >
+                <a>
+                  <i class="fa-brands fa-instagram text-black"></i>
+                </a>
+              </div>
+              <div
+                class="rounded-full bg-light-yellow w-8 p-1 shadow-sm shadow-black z-40"
+              >
+                <a>
+                  <i class="fa-brands fa-twitter text-black"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center gap-20">
+          <div class="flex flex-col space-y-2">
+            <a class="link link-hover">Home</a>
+            <a class="link link-hover">About Us</a>
+          </div>
+
+          <div class="flex flex-col space-y-2">
+            <a class="link link-hover">Blogs</a>
+            <a class="link link-hover">Cat 1</a>
+            <a class="link link-hover">Cat 2</a>
+            <a class="link link-hover">Cat 3</a>
+          </div>
+
+          <div class="flex flex-col space-y-2">
+            <a class="link link-hover">Originals</a>
+            <a class="link link-hover">Specials</a>
+          </div>
+        </div>
+
+        <div class="mt-8">
+          <!-- Search Bar -->
+          <div class="flex justify-center">
+            <input
+              type="text"
+              class="bg-transparent text-dark-gray h-7 w-9/12 px-2 py-1 rounded-2xl border border-black"
+            />
+            <button
+              class="bg-dark-gray text-light-yellow px-2 py-1 rounded ml-2"
+            >
+              🔍
+            </button>
+          </div>
+
+          <div class="flex justify-center gap-8 mt-8 text-center">
+            <a class="link link-hover">Terms &<br />Condition</a>
+            <a class="link link-hover">Privacy<br />Policy</a>
+            <a class="link link-hover">Accessibility<br />Statement</a>
+          </div>
+        </div>
+
+        <!-- Horizontal Line above the text -->
+        <hr class="w-full border-t-2 border-black bg-black mt-6 mb-2" />
+
+        <div class="text-center mt-4">
+          <p>&copy; 2024 TPO. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
