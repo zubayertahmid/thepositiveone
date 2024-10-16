@@ -95,7 +95,13 @@
           grid-template-columns: repeat(2, 1fr);
           grid-template-rows: repeat(4, auto);
         }
-        .item-1, .item-2, .item-3, .item-4, .item-5, .item-6, .item-7 {
+        .item-1,
+        .item-2,
+        .item-3,
+        .item-4,
+        .item-5,
+        .item-6,
+        .item-7 {
           grid-column: auto;
           grid-row: auto;
         }
@@ -208,37 +214,51 @@
         </div>
 
         <!-- Social Icons Section -->
-        <div class="text-center mt-8 mb-8">
-          <p>Welcome @The<span class="text-light-yellow">Positive</span>One!</p>
-          <div class="flex justify-center -space-x-1 mt-3">
-            <!--social media icons -->
-            <div
-              class="rounded-full bg-light-yellow w-8 p-1 shadow-lg shadow-black z-50"
-            >
-              <a>
-                <i class="fa-brands fa-facebook-f text-black"></i>
-              </a>
-            </div>
-            <div
-              class="rounded-full bg-light-yellow w-8 p-1 shadow-lg shadow-black z-40"
-            >
-              <a>
-                <i class="fa-brands fa-linkedin-in text-black"></i>
-              </a>
-            </div>
-            <div
-              class="rounded-full bg-light-yellow w-8 p-1 shadow-lg shadow-black z-50"
-            >
-              <a>
-                <i class="fa-brands fa-instagram text-black"></i>
-              </a>
-            </div>
-            <div
-              class="rounded-full bg-light-yellow w-8 p-1 shadow-lg shadow-black z-40"
-            >
-              <a>
-                <i class="fa-brands fa-twitter text-black"></i>
-              </a>
+        <div class="relative text-center mt-8 mb-8">
+          <!-- Half Circle Background -->
+          <div class="absolute inset-0">
+            <img
+              src="./images/half-circle.png"
+              alt="half-circle"
+              class="w-10/12 md:w-6/12 lg:w-2/6 mx-auto object-cover relative -top-14 md:-top-16 lg:-top-20"
+            />
+          </div>
+
+          <!-- Content on Top -->
+          <div class="relative z-10">
+            <p>
+              Welcome @The<span class="text-light-yellow">Positive</span>One!
+            </p>
+            <div class="flex justify-center -space-x-1 mt-3">
+              <!-- Social media icons -->
+              <div
+                class="rounded-full bg-light-yellow w-8 p-1 shadow-lg shadow-black z-50"
+              >
+                <a>
+                  <i class="fa-brands fa-facebook-f text-black"></i>
+                </a>
+              </div>
+              <div
+                class="rounded-full bg-light-yellow w-8 p-1 shadow-lg shadow-black z-40"
+              >
+                <a>
+                  <i class="fa-brands fa-linkedin-in text-black"></i>
+                </a>
+              </div>
+              <div
+                class="rounded-full bg-light-yellow w-8 p-1 shadow-lg shadow-black z-50"
+              >
+                <a>
+                  <i class="fa-brands fa-instagram text-black"></i>
+                </a>
+              </div>
+              <div
+                class="rounded-full bg-light-yellow w-8 p-1 shadow-lg shadow-black z-40"
+              >
+                <a>
+                  <i class="fa-brands fa-twitter text-black"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -247,7 +267,7 @@
       <!-- Hero Lower Section -->
       <section class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 mt-24">
         <!-- Left Side Text Container -->
-        <div class="max-w-4xl mx-auto px-10 mb-16">
+        <div class="max-w-4xl mx-auto px-10 mb-16 relative z-10">
           <!-- Horizontal Line above the text -->
           <div class="w-12 h-1 bg-light-yellow mb-2"></div>
           <h2 class="text-3xl font-bold text-light-yellow mb-4">About Us</h2>
