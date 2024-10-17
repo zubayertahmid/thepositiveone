@@ -266,10 +266,10 @@
 
       <!-- Hero Lower Section -->
       <section
-        class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 mt-24 relative"
+        class="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 mt-24 relative w-11/12 mx-auto"
       >
         <!-- Left Side Text Container -->
-        <div class="max-w-4xl mx-auto px-10 mb-16 relative z-10">
+        <div class="max-w-4xl mx-auto mb-16 relative z-10">
           <!-- Horizontal Line above the text -->
           <div class="w-12 h-1 bg-light-yellow mb-2"></div>
           <h2 class="text-3xl font-bold text-light-yellow mb-4">About Us</h2>
@@ -314,9 +314,15 @@
         </div>
       </section>
 
-      <section class="bg-highlight-red py-16 px-4">
-        <h2 class="text-3xl font-bold mb-8 text-center">Highlights</h2>
-        <div class="grid grid-cols-3 gap-4 max-w-4xl mx-auto">
+      <section class="bg-highlight-red py-16">
+        <div class="w-11/12 mx-auto">
+          <!-- Horizontal Line above the text -->
+          <div class="w-12 h-1 bg-light-yellow mb-2"></div>
+          <h2 class="text-3xl font-bold mb-8 text-left text-light-yellow">
+            Highlights
+          </h2>
+        </div>
+        <div class="grid grid-cols-3 gap-4 mx-auto w-11/12">
           <div
             class="bg-dark-gray aspect-square flex items-center justify-center text-4xl font-bold"
           >
@@ -345,23 +351,48 @@
         </div>
       </section>
 
-      <section class="py-16 px-4">
-        <h2 class="text-3xl font-bold text-light-yellow mb-8 text-center">
-          Originals
-        </h2>
-        <div class="max-w-4xl mx-auto bg-gray-800 rounded-lg p-8">
-          <h3 class="text-2xl mb-4">
-            The <span class="text-light-yellow">Oxyjet</span>
-          </h3>
-          <p class="mb-4">Flow Generator</p>
-          <!-- Replace with actual image -->
-          <div class="bg-gray-300 h-64 w-full rounded-lg mb-4"></div>
-          <div class="flex justify-center space-x-2">
-            <span class="w-2 h-2 bg-gray-300 rounded-full"></span>
-            <span class="w-2 h-2 bg-gray-300 rounded-full"></span>
-            <span class="w-2 h-2 bg-gray-300 rounded-full"></span>
-            <span class="w-2 h-2 bg-gray-300 rounded-full"></span>
-            <span class="w-2 h-2 bg-gray-300 rounded-full"></span>
+      <section class="py-16 w-11/12 mx-auto">
+        <!-- Horizontal Line above the text -->
+        <div class="w-12 h-1 bg-white mb-2"></div>
+        <h2 class="text-3xl font-bold text-white mb-8 text-left">Originals</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <!-- Large Card -->
+          <div class="md:col-span-1 flex items-center justify-center">
+            <div
+              class="shadow-[0px_0px_14px_rgba(0,0,0,1)] relative w-full h-full rounded-lg"
+            >
+              <img
+                src="./images/img2.png"
+                alt="Large Card"
+                class="w-full h-full object-cover rounded-lg"
+              />
+            </div>
+          </div>
+
+          <!-- Two Small Cards -->
+          <div class="md:col-span-1 grid grid-cols-1 gap-6">
+            <!-- Small Card 1 -->
+            <div
+              class="shadow-[0px_0px_14px_rgba(0,0,0,1)] rounded-lg relative"
+            >
+              <img
+                src="./images/img4.png"
+                alt="Small Card 1"
+                class="w-full h-64 object-cover rounded-lg"
+              />
+            </div>
+
+            <!-- Small Card 2 -->
+            <div
+              class="shadow-[0px_0px_14px_rgba(0,0,0,1)] rounded-lg relative"
+            >
+              <img
+                src="./images/img5.png"
+                alt="Small Card 2"
+                class="w-full h-64 object-cover rounded-lg"
+              />
+            </div>
           </div>
         </div>
       </section>
